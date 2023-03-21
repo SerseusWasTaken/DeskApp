@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">DeskApplication</string>
-    <string name="passwortInputFieldHint">Passwort</string>
+    <string name="passwordInputFieldHint">Passwort</string>
+    <string name="usernameInputFieldHint">Nutzername</string>
+    <string name="loginButtonText">Login</string>
+    <string name="appTitleText">HFU Desks</string>
 </resources>
