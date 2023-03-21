@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DeskApplication</string>
+    <string name="passwortInputFieldHint">Passwort</string>
+</resources>
