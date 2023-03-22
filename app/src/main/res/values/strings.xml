@@ -4,4 +4,7 @@
     <string name="usernameInputFieldHint">Nutzername</string>
     <string name="loginButtonText">Login</string>
     <string name="appTitleText">HFU Desks</string>
+    <string name="reserveDeskButtonText">Desk buchen</string>
+    <string name="cancelDeskButtonText">Desk freigeben</string>
+    <string name="statisticsButtonText">Statistik</string>
 </resources>
