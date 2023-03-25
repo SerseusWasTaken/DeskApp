@@ -18,7 +18,7 @@ public class MainMenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main_menu);
         Button reserveDeskButton = findViewById(R.id.reserveDeskButton);
         reserveDeskButton.setOnClickListener(view -> startActivity(new Intent(MainMenuActivity.this, PickDateTimeActivity.class)));
-        Button cancelDeskButton = findViewById(R.id.cancelDeskButton);
+        Button cancelDeskButton = findViewById(R.id.cancelOwnDeskButton);
         cancelDeskButton.setOnClickListener(view -> startActivity(new Intent(MainMenuActivity.this, CancelDeskActivity.class)));
         Button statisticsButton = findViewById(R.id.statisticsButton);
         statisticsButton.setOnClickListener(view -> startActivity(new Intent(MainMenuActivity.this, StatisticsActivity.class)));

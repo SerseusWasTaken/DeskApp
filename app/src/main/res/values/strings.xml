@@ -7,4 +7,11 @@
     <string name="reserveDeskButtonText">Desk buchen</string>
     <string name="cancelDeskButtonText">Desk freigeben</string>
     <string name="statisticsButtonText">Statistik</string>
+    <string name="backToMainMenuButtonText">Startseite</string>
+    <string name="morningRadioButtonText">Vormittag</string>
+    <string name="eveningRadioButtonText">Nachmittag</string>
+    <string name="weeklyCheckBoxText">Wöchentlich</string>
+    <string name="chooseDeskButtonText">Tisch auswählen</string>
+    <string name="requestDeskButtonText">Tisch buchen</string>
+    <string name="cancelChosenDeskButtonText">Ausgewählten Desk freigeben</string>
 </resources>
