@@ -12,6 +12,15 @@
         android:theme="@style/Theme.DeskApplication"
         tools:targetApi="31">
         <activity
+            android:name=".cancel.CancelDeskDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reserve.RequestDeskReleaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reserve.PickDeskActivity"
+            android:exported="false" />
+        <activity
             android:name=".misc.StatisticsActivity"
             android:exported="false" />
         <activity
