@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.example.deskapplication.R;
+import com.example.deskapplication.io.JSONWebTask;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.XAxis;
@@ -125,36 +126,8 @@ public class StatisticsActivity extends AppCompatActivity {
     }
 
     void showFavouriteDeskStatistic(BarChart barChart, SharedPreferences preferences) {
-        Description desc = new Description();
-        desc.setEnabled(false);
-        barChart.setDescription(desc);
-        barChart.animateY(1000);
-
-        YAxis axisLeft = barChart.getAxisLeft();
-        YAxis axisRight = barChart.getAxisRight();
-        axisRight.setAxisMaximum(100f);
-        axisLeft.setAxisMaximum(100f);
-        axisRight.setAxisMinimum(0f);
-        axisLeft.setAxisMinimum(0f);
-
-        XAxis xAxis = barChart.getXAxis();
-        xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
-        xAxis.setGranularity(1f);
-        xAxis.setDrawAxisLine(false);
-
-        ArrayList<BarEntry> entries = new ArrayList<>();
-        String title = "Auslastung der Lieblingsräume";
-        String favoriteDesk = preferences.getString("favouriteDesk", "1");
-        BarEntry barEntry = new BarEntry(0,(float) preferences.getInt("totalLoadDesk" + favoriteDesk, 0));
-        entries.add(barEntry);
-
-        BarDataSet dataSet = new BarDataSet(entries, title);
-        dataSet.setColor(Color.parseColor("#154c79"));
-        dataSet.setDrawValues(false);
-        BarData data = new BarData(dataSet);
-        barChart.setData(data);
-
-        barChart.invalidate();
+        JSONWebTask task = new JSONWebTask(barChart, "1");
+        task.execute();
     }
 
 
